@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Bullet Fire</title>
+        <style>
+            body{margin:5px}
+            #one{width:20px;height:20px;background:skyblue;transition: all 1s;}
+        </style>
+    </head>
+
+<body>
+    <div id="one"></div><br/>
+    <button onclick="fire()">Fire</button>
+
+
+<script> 
+
+function fire(){
+    a = document.getElementById('one');
+    a.style.marginLeft = "90%";
+    setTimeout(reverse, 1500)
+    function reverse(){
+        a.style.marginLeft = "0%";    
+    }
+}
+
+
+</script>
+
+</body>
+
+
+</html>
